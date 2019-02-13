@@ -4,10 +4,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(":domain")
 
-    //RX java
-    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
-    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
-    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    dps.reactivexAll.each { implementation it }
 }
 
 sourceCompatibility = "7"

@@ -1,0 +1,22 @@
+allprojects {
+    ext {
+        dps = rootProject.ext
+    }
+}
+
+ext {
+
+    //RxJava
+    rxjava_version = '2.2.6'
+    rxkotlin_version = '2.3.0'
+    rxandroid_version = '2.1.0'
+
+    reactivex = [
+            //RX java
+            rxJava: "io.reactivex.rxjava2:rxjava:$rxjava_version",
+            rxKotlin: "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    ]
+
+    reactivexAll = reactivex.values()
+}
