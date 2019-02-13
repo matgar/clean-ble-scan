@@ -7,11 +7,11 @@ class InitializationInteractorImpl(
     private val scanInteractor: DeviceScanInteractor
 ): InitializationInteractor {
 
-    override fun finish() {
+    override fun initialize() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun initialize() {
+    override fun finish() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
